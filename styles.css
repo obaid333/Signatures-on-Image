@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    border: 20px solid #ccc; /* Gray border around the body */
+}
+
+#leftPanel {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-right: 1px solid #ccc; /* Gray border on the right */
+}
+
+#imagePreviewContainer {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    border: 1px solid #ccc; /* Gray border around the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageAndSignatureContainer {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ccc; /* Gray border around the image */
+}
+
+#signatureOverlay {
+    margin-top: auto; /* Pushes the signature overlay to the bottom */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#signatureOutput {
+    font-family: 'Arial', sans-serif; /* Default font family */
+    font-size: 16px; /* Default font size */
+    color: #000000; /* Default font color */
+}
